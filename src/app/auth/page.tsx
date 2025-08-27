@@ -58,7 +58,7 @@ const AuthPage: React.FC = () => {
     setIsLoading(true);
     
     try {
-      const response = await fetch('https://randomuser.me/api/?results=1');
+      const response = await fetch('/api/login');
       if (!response.ok) {
         throw new Error('Request failed');
       }
